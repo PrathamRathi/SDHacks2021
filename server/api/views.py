@@ -12,10 +12,10 @@ class UserView(generics.RetrieveUpdateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-class LoginView(generics.ListAPIView):
+class LoginView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    def list(self, request, *args, **kwargs):
+    def create(self, request, *args, **kwargs):
         email = request.data['email']
         password = request.data['password']
         queryset = self.filter_queryset(self.get_queryset()).filter(email=email, password=password)

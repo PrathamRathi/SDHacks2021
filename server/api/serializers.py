@@ -16,6 +16,11 @@ class ApplicationSerializer(serializers.ModelSerializer):
         model = Application
         fields = ('uuid', 'applicant', 'event', 'status', 'availability', 'description')
 
+class TagFrequencySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TagFrequency
+        fields = ('user', 'event_tag', 'frequency')
+
 class EventSerializer(serializers.ModelSerializer):
     tags = EventTagSerializer
     applications = ApplicationSerializer
@@ -29,4 +34,4 @@ class UserSerializer(serializers.ModelSerializer):
     events = EventSerializer
     class Meta:
         model = User
-        fields = ('uuid', 'email', 'password', 'first_name', 'last_name', 'phone', 'description', 'profile_pic', 'tags', 'applications', 'events')
+        fields = ('uuid', 'email', 'password', 'first_name', 'last_name', 'phone', 'description', 'profile_pic', 'tags', 'applications', 'events', 'tag_frequency')
