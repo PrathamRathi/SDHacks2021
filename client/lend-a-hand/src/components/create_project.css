@@ -10,12 +10,68 @@
 
 .centeredCP {
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0);
-  }
+}
+
+.centeredCP > h1 {
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+    padding-bottom: 1.5%;
+}
+
+.create-form > h3 {
+    color: black;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    padding-top: 1.5%;
+}
+
+input[type=projecttext] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 5px 0;
+    border: none;
+    background: white;
+}
+  
+input[type=projecttext]:focus {
+    background-color: rgb(226, 226, 226);
+    outline: none;
+}
+
+.project-skills {
+    color: black;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    padding-top: 1.5%;
+    margin-left: -10px;
+}
+
+.submit-btn {
+    background-color: rgb(12, 129, 22);
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    
+    opacity: 0.9;
+    display: flex;
+    text-decoration: none;
+    padding: 0.8rem 21.1rem;
+}
+
+.submit-btn:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+    opacity:1;
+}
+
+.chooseFile {
+    margin-left: 160px;
+}

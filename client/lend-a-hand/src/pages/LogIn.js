@@ -1,23 +1,44 @@
 import React from 'react';
 import '../components/LogIn.css';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 function LogIn() {
+  const [state, setState] = React.useState({
+    email: '',
+    password: '',
+  });
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const submission = {
+      email: state.email,
+      password: state.password
+    };
+    const response = await fetch(`http://127.0.0.1:8000/api/user/login`, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(submission)
+    });
+    return(
+      <Redirect to="/user"/>
+    )
+  }
+  const handleChange = (prop) => (event) => {
+    setState({ ...state, [prop]: event.target.value });
+  }
   return (
-
-    <body class="login-page">
-
+    <>
+    <div class="login-page"></div>
         <div class="left">
           <div class="centered">
-            <form action="action_page.php">
+            <form onSubmit={handleSubmit}>
               <div class="login-container">
                 <h1>Log In</h1>
                 <hr></hr>
                 <p>Email</p>
-                <input type="text" placeholder="Enter Email" name="email"  />
+                <input type="text" onChange={handleChange('email')} placeholder="Enter Email" name="email"  />
 
                 <p>Password</p>
-                <input type="password" placeholder="Enter Password" name="psw"  />
+                <input type="password" onChange={handleChange('password')} placeholder="Enter Password" name="psw"  />
               
                 <div>
                   <Link to='/user' className='login-btn'>Log In</Link>
@@ -68,7 +89,8 @@ function LogIn() {
           </div>
         </div>
         
-    </body>
+        <div class="login-page"></div>
+        </>
   );
   
 }

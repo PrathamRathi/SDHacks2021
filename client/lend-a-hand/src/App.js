@@ -8,7 +8,8 @@ import Volunteer from './pages/Volunteer';
 import LogIn from './pages/LogIn';
 import UserHome from './pages/UserHome';
 import createProjects from './pages/create_projects';
-import manageProjects from './pages/manage_projects';
+import manageProjects from './pages/manage_projects'
+import applyProjects from './pages/apply_project'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/user' component={UserHome} />
           <Route path = '/createProject' component={createProjects} />
           <Route path = '/manageProjects' component={manageProjects} />
+          <Route path = '/project' component={applyProjects} />
         </Switch>
       </Router>
     </>
