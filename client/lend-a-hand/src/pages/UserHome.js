@@ -9,7 +9,9 @@ import CardItem from '../components/CardItem';
 *participating projects
 *search results page
 */
-
+/**
+ * 
+ */
 function UserHome(){
     return(
 
@@ -39,20 +41,12 @@ function UserHome(){
                 <div class="suggested_products">
                     <h2>Suggested Projects</h2>
                     <div class='user-suggested-cards'>
-                        <ul class='cards__items1'>
-                        <CardItem
+                    <CardItem
                         src='https://drive.google.com/uc?export=view&id=13orbF5EZDwkZVeJXH21tI_qym9VU-PEC'
                         text='Fighting To Close Wage Gap'
                         label='Gender Equality'
-                        path='/services' 
+                        path='/project' 
                         />
-                        <CardItem
-                        src='https://drive.google.com/uc?export=view&id=1JUtNQkOJy5E830lM3kYDIYZvIQmcS9iF'
-                        text='Improving Underprivileged Schools'
-                        label='Education'
-                        path='/services'
-                        />
-                        </ul>
                     </div>
                 </div>
             </div>

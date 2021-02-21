@@ -1,6 +1,6 @@
 .user-main > h1 {
     color: black;
-    font-size: 80px;
+    font-size: 70px;
     margin-top: -100px;
     padding-bottom: 0.5%;
     padding-top: 7%
@@ -67,7 +67,7 @@
 
 .user-btns:hover {
     background: #2b2bff;
-    transition: all 0.5s;
+    transition: all 0.3s;
     border-radius: 10px;
     box-shadow: 0px 6px 15px #0000ff61;
     padding: 1.5rem 3.5rem 1.5rem 1.5rem;
@@ -83,11 +83,11 @@
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
-    padding-top: 1.5%;
+    padding-top: 0%;
 }
 
 input[type=project] {
-    width: 100%;
+    width: 97%;
     padding: 15px;
     margin: 10px 0 20px 0;
     border: none;
@@ -100,7 +100,7 @@ input[type=project]:focus {
 }
 
 .suggested_products {
-    margin-top: 0px;
+    margin-top: -5px;
     margin-left: 40px;
 }
 

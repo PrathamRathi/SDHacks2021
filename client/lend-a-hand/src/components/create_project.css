@@ -19,7 +19,7 @@
 .centeredCP > h1 {
     color: black;
     font-size: 50px;
-    margin-top: 20px;
+    margin-top: 300px;
     padding-bottom: 1.5%;
 }
 
@@ -74,4 +74,23 @@ input[type=projecttext]:focus {
 
 .chooseFile {
     margin-left: 160px;
+}
+
+.create-project-btn {
+    background-color: rgb(12, 129, 22);
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    
+    opacity: 0.9;
+    display: flex;
+    text-decoration: none;
+    padding: 0.8rem 18.8rem;
+}
+
+.create-project-btn:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+    opacity:1;
 }

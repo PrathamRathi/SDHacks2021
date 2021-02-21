@@ -65,4 +65,9 @@ class Application(models.Model):
     availability = models.TextField()
     description = models.TextField()
     answers = models.TextField()
+
+class TagFrequency(models.Model):
+    user = models.ForeignKey(User, on_delete = models.CASCADE, related_name = 'tag_frequencies')
+    event_tag = models.CharField(max_length = 30, choices = PROJECT_TAG_OPTIONS)
+    frquency = models.IntegerField(default = 0)
     

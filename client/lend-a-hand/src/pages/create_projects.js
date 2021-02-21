@@ -36,13 +36,23 @@ function createProjects(){
                 <label><b class = "project-skills">Disaster Relief </b><input type="checkbox"/></label><br />
                 <label><b class = "project-skills">Fundraising </b><input type="checkbox"/></label><br />
                 <br />
+                <h3>What roles do you need fulfilled?</h3>
+                <br />
+                <label><b class = "project-skills">Software Developer </b><input type="checkbox"/></label><br />
+                <label><b class = "project-skills">Accountant </b><input type="checkbox"/></label><br />
+                <label><b class = "project-skills">Finance </b><input type="checkbox"/></label><br />
+                <label><b class = "project-skills">Management </b><input type="checkbox"/></label><br />
+                <label><b class = "project-skills">Public Relations </b><input type="checkbox"/></label><br />
+                <label><b class = "project-skills">Merchandise </b><input type="checkbox"/></label><br />
+                <label><b class = "project-skills">Lawyer </b><input type="checkbox"/></label><br />
+                <br />
                 <h3> Project Photo</h3> <br />
                 <input type="file" id="myFile" name="Project Photo" class="chooseFile"></input>
                 <h3>You are all set! Your project will be set up and can now start receiving responses.</h3><br />
                 <h3>To look at applications, edit project information, and more, head over to the "Manage Projects" tab on the home page.</h3><br />
 
                 <div class="clearfix">
-                <Link to='/user' className='submit-btn'>Sign Up</Link>
+                <Link to='/user' className='create-project-btn'>Create Project</Link>
                 </div>
                 </div>
                 </form>

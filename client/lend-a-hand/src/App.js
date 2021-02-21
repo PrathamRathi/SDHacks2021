@@ -10,6 +10,8 @@ import UserHome from './pages/UserHome';
 import createProjects from './pages/create_projects';
 import manageProjects from './pages/manage_projects'
 import applyProjects from './pages/apply_project'
+import donation from './components/Donation';
+import apply from './pages/apply';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path = '/createProject' component={createProjects} />
           <Route path = '/manageProjects' component={manageProjects} />
           <Route path = '/project' component={applyProjects} />
+          <Route path = '/donation' component={donation} />
+          <Route path = '/apply' component={apply} />
         </Switch>
       </Router>
     </>

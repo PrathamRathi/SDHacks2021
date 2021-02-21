@@ -8,13 +8,13 @@ const cards1 = [
     'src' : 'https://drive.google.com/uc?export=view&id=13orbF5EZDwkZVeJXH21tI_qym9VU-PEC',
     'text' : 'Fighting To Close Wage Gap',
     'label' : 'Gender',
-    'path' : '/services',
+    'path' : '/project',
   },
   {
     'src' : 'https://drive.google.com/uc?export=view&id=1JUtNQkOJy5E830lM3kYDIYZvIQmcS9iF',
     'text' :'Improving Underprivileged Schools',
     'label' : 'Education',
-    'path' : '/services',
+    'path' : '/project',
   }
 ]
 const cards2 = [
@@ -22,13 +22,13 @@ const cards2 = [
     'src' : 'https://drive.google.com/uc?export=view&id=1D4OQw34Wgk9sDtZ1hENcC7heQBhzjH-O',
     'text' : 'Ending Police Injustice',
     'label' : 'Police',
-    'path' : '/services',
+    'path' : '/project',
   },
   {
     'src' : 'https://drive.google.com/uc?export=view&id=12yifXGuqVgGy7Yw7sbSFwyt5e51ihHXt',
     'text' : 'Improving Health Care Outcomes for Underprivledged Communities.',
     'label' : 'Health Care',
-    'path' : '/sign-up', 
+    'path' : '/project', 
   }
 ]
 
